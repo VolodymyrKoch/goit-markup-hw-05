@@ -1,0 +1,27 @@
+<style>
+  .popups {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .block {
+    min-height: 650px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    transition: all 0.2s linear;
+    transform: scale(1);
+  }
+
+  .popups.is-hidden .block {
+    transform: translateY(-100%);
+  }
+</style>
